@@ -1,0 +1,21 @@
+server:
+  port: 8480
+
+
+spring:
+  application:
+    name=bigdatadatasyncdemo
+
+
+
+es:
+  host: 192.168.2.103
+  port: 9200
+  scheme: http
+
+feign:
+  name: EsFeignClient
+  url: http://192.168.2.103:9200
+  hystrix:
+    enabled: true
+
